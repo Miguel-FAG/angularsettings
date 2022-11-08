@@ -1,0 +1,24 @@
+
+<div class="container col-sm-6 my-5">
+  <div class="card">
+    
+    <div class="card-header">
+      <h2>Editar Nueva Persona</h2>
+    </div>
+    
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="">Nombre: </label>
+          <input type="text" name="nombre" [(ngModel)] = "modelPersona.nombre">
+        </div>
+        <div class="form-group">
+          <label for="">Telefono: </label>
+          <input type="text" name="telefono" [(ngModel)] = "modelPersona.telefono">
+        </div>
+
+        <input type="submit" (click)="Modificar(modelPersona)" class="btn btn-warning" name="guardar" value="Guardar Cambios">
+      </form>
+    </div>
+  </div>
+</div>
